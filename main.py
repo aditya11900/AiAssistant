@@ -14,7 +14,7 @@ chatStr = ""
 def chat(query):
     global chatStr
     print(chatStr)
-    openai.api_key = "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"
+    openai.api_key = "Api-Key"
     chatStr += f"Aditya: {query}\n Jarvis: "
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
@@ -36,7 +36,7 @@ def chat(query):
 
 
 def ai(prompt):
-    openai.api_key = "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"
+    openai.api_key = "Api-key"
     text = f"OpenAI response for Prompt: {prompt} \n *************************\n\n"
 
     response = openai.Completion.create(
