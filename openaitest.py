@@ -2,7 +2,7 @@ import os
 import openai
 from config import apikey
 
-openai.api_key = apikey
+openai.api_key = "Apikey"
 
 response = openai.Completion.create(
   model="gpt-3.5-turbo-0125",
